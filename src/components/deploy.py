@@ -27,7 +27,7 @@ def deploy_model_to_endpoint(
     # 2. Create or Get Endpoint
     endpoints = aiplatform.Endpoint.list(filter=f'display_name="{display_name}-endpoint"')
     if endpoints:
-        endpoint = endpoints 0 
+        endpoint = endpoints[0]
     else:
         endpoint = aiplatform.Endpoint.create(display_name=f"{display_name}-endpoint")
 

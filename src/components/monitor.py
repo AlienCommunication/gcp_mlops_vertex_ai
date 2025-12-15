@@ -11,10 +11,8 @@ def setup_monitoring(
     email: str
 ):
     from google.cloud import aiplatform
-    from google.cloud.aiplatform import model_monitoring[ 3 (https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQESzLDLVkfmbvLYAPyVVRbjfWKJa3ZhfbSYHHJ6O_lzwjqDkrEkbMv_ypR9XTh3n1_yzPnqx0JC_YqUTXBiI0X8tLw3QEJjbdWYlW2ShimeIwLP-8NJYa5ZwcL2vwC1tdLXtj8_JF5D1K_MmaT6Ez-WRSwhuM7knL15qqiNudNohwpTINBz8kLaElpHww==)][ 6 (https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF6TctUvUjv9RK0-Ps9_P-osfV4hz3FkXJjlVip_leLJyEhTW6L9HPaamgnCzNPYaDEgguDlB41-8O0E24U7PzFBqH1iEL0RcxFvRj3drY69oG2GN4rldmgjBw88c8sCGrQAYoBMo7vZYqen_nsp9ixKNJA18M6flwK334w-XZ6Y7n2IHLKS67nuee3xSBUHMYF54a7ovgIOBsbuuwaQtb6pPXOY6VvUXsbeThIq14SsEqqdqtlp7bWpyLGw87H9XSwXQo_-TgtecHV8EIVZAoVuiYSaYrv9jf-vIf1q1xuNhFqJDqgge9_0IexXiX8DisNNM8U)][ 12 (https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHsVeyX46kVGju2gkDRHHWHUJJ1DAtA0OPtNPQnO4Y9Rp-IjXDiSDMgOyuxo_aft6FTv4I-8oAZPSws7PKRNXNh86XK-29JxAXsACsdAQv0wRD-qfAMATI-F5_RN_GP2e7ZrLS8avDXRgKTM_jgXgt4509AYhXGtAe3StI_4qKk13T3O5YqQDsco272CHhUzs1o)]
-
-    aiplatform.init(project=project_id, location=region)[ 5 (https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF0hD0i4aZXeUg6L2LdPIgQX86orDELbjPu8XCVo-NU4KSIWI47g0wEvhFM5cIJ1jn9L53_svhLsVzLYSCQnlO-VOKa9e3W0q7FwVOso-VqnYQMLRmjV4gkak2fqg4-JV-UJruPUB_oxabFS5UhorQ1ww1rJK4=)]
-    
+    from google.cloud.aiplatform import model_monitoring
+    aiplatform.init(project=project_id, location=region)
     endpoint_name = endpoint.metadata["resourceName"]
     my_endpoint = aiplatform.Endpoint(endpoint_name)
 
