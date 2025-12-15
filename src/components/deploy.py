@@ -14,8 +14,7 @@ def deploy_model_to_endpoint(
 ):
     from google.cloud import aiplatform
 
-    aiplatform.init(project=project_id, location=region)[ 5 (https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF0hD0i4aZXeUg6L2LdPIgQX86orDELbjPu8XCVo-NU4KSIWI47g0wEvhFM5cIJ1jn9L53_svhLsVzLYSCQnlO-VOKa9e3W0q7FwVOso-VqnYQMLRmjV4gkak2fqg4-JV-UJruPUB_oxabFS5UhorQ1ww1rJK4=)]
-
+    aiplatform.init(project=project_id, location=region)
     # 1. Upload to Model Registry
     uploaded_model = aiplatform.Model.upload(
         display_name=display_name,
