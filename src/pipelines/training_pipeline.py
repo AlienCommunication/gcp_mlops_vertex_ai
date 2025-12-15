@@ -5,6 +5,7 @@ from src.components.deploy import deploy_model_to_endpoint
 from src.components.monitor import setup_monitoring
 from config import *
 
+#pipeline
 @dsl.pipeline(
     name="penguin-training-pipeline",
     description="End-to-end MLOps pipeline with Feature Store and Monitoring",
