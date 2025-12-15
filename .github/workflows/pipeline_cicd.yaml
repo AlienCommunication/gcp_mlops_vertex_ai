@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  PROJECT_ID: your-gcp-project-id
+  PROJECT_ID: classdemo-425210
   REGION: us-central1
   PIPELINE_ROOT: gs://your-gcp-project-id-vertex-artifacts/pipeline_root
   SERVICE_ACCOUNT: vertex-sa@your-gcp-project-id.iam.gserviceaccount.com
